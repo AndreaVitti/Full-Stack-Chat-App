@@ -1,0 +1,20 @@
+<div class="main">
+    <div class="chatCont">
+        @for (message of messages; track $index) {
+        <div class="messageCont"
+            [style.justify-content]="(message.type !== 'CHAT')? 'center' : (message.sender === username)? 'end':'start'">
+            <span class="message"
+                [style.background-color]="(message.sender === username)? 'var(--chat-msg-background-color)' : 'var(--chat-other-msg-background-color)'">
+                {{message.sender}}{{message.payload}}
+            </span>
+        </div>
+        }
+    </div>
+    <div class="bottomBar">
+        <form [formGroup]="sendMsgForm" (submit)="send(sendMsgForm.value!.message!, 'CHAT')" class="sendForm">
+            <textarea formControlName="message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <button (click)="disconnect()">Disconnect</button>
+    </div>
+</div>

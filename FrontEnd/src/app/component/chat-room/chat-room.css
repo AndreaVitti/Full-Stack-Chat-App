@@ -1,0 +1,74 @@
+.main {
+    font-family: Playwrite NZ Basic;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100dvh;
+    background-color: var(--main-background-color);
+}
+
+.bottomBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: var(--nav-bar-background-color);
+    border-top: 3px var(--form-background-color) solid;
+}
+
+textarea,
+button {
+    font-family: Playwrite NZ Basic;
+    font-size: 2rem;
+    border-radius: 20px;
+}
+
+textarea {
+    padding: 0.5rem;
+}
+
+textarea::-webkit-scrollbar {
+    display: none;
+}
+
+button {
+    height: 60%;
+    color: var(--form-background-color);
+    background-color: var(--btn-background-color);
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.sendForm {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.chatCont {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    padding: 0.5rem;
+    margin: 1rem;
+    width: 50%;
+    background-image: url('/images/default-background.jpg');
+    background-size: contain;
+    background-position: bottom;
+    border-radius: 20px;
+    overflow-y: auto;
+}
+
+.messageCont{
+    display: flex;
+}
+
+.message {
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 20px;
+}

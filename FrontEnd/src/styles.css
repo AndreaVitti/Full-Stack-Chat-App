@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --main-background-color: #00a2ff;
+    --nav-bar-background-color: #00263b;
+    --form-background-color: #ffffff;
+    --btn-background-color: #0468a1;
+    --chat-msg-background-color: #ffffffee;
+    --chat-other-msg-background-color:#96eaffee;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body,
+h1 {
+    padding: 0;
+    margin: 0;
+}

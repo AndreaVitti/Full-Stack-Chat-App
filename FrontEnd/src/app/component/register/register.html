@@ -1,0 +1,17 @@
+<div class="main">
+    <div class="navBar">
+        <button (click)="navLogin()">Login</button>
+    </div>
+    <div class="registerCont">
+        <h1>Register</h1>
+        <form [formGroup]="loginForm" (submit)="register()" class="registerForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" formControlName="username">
+            <label for="email">Email:</label>
+            <input type="email" id="email" formControlName="email">
+            <label for="password">Password:</label>
+            <input type="text" id="password" formControlName="password">
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</div>
